@@ -1,4 +1,5 @@
 $color-white: #ffffff;
+$color-black: #000000;
 $color-gray-light: #cccccc;
 $color-egg-shell: #FBE9E7;
 $color-pink: #FFBDE8;
@@ -7,3 +8,6 @@ $color-green: #E8FFBD;
 $color-orange: #FFE8BD;
 $color-violet: #E8BDFF;
 $color-pink-dark: #EC407A;
+
+$animation-settings: 5s ease-in-out infinite alternate;
+$egg-shadow: 0 60px 35px rgba($color-black, 0.2);

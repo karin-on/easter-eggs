@@ -1,0 +1,39 @@
+@keyframes shadowMoveLeft {
+  0% {
+    left: 8%;
+    width: 64%;
+  }
+  100% {
+    left: 0;
+    width: 70%;
+  }
+}
+
+@keyframes shadowMoveRight {
+  0% {
+    right: 0;
+    width: 66%;
+  }
+  100% {
+    right: -8%;
+    width: 72%;
+  }
+}
+
+@keyframes leanLeft {
+  0% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(-25deg);
+  }
+}
+
+@keyframes leanRight {
+  0% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
+}

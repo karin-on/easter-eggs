@@ -1,0 +1,29 @@
+.egg-wrapper {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    height: 12%;
+    border-radius: 50%;
+    z-index: -1;
+    bottom: 30px;
+    box-shadow: $egg-shadow;
+  }
+
+  &--1 {
+    margin-right: -60px;
+
+    &:after {
+      animation: shadowMoveLeft $animation-settings;
+    }
+  }
+
+  &--2 {
+    margin-left: -60px;
+
+    &:after {
+      animation: shadowMoveRight $animation-settings;
+    }
+  }
+}
