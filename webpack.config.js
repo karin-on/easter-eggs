@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 module.exports = function (env) {
@@ -26,16 +27,38 @@ module.exports = function (env) {
                         // }
                     }
                 },
+                // {
+                //     test   : /\.css$/,
+                //     loaders: [
+                //         'style-loader',
+                //         'css-loader',
+                //         'resolve-url-loader'
+                //         // { loader: 'css-loader', options: { url: isDev }}
+                //     ]
+                // },
                 {
                     test: /\.s(a|c)ss$/,
                     use: [
                         !isDev ?
                             MiniCssExtractPlugin.loader :
                             { loader: 'style-loader', options: { sourceMap: true } },
-                        { loader: 'css-loader', options: { sourceMap: isDev } },
+                        // { loader: 'css-loader', options: { sourceMap: isDev } },
+                        { loader: 'css-loader', options: { sourceMap: isDev, url: !isDev } },
                         { loader: 'postcss-loader', options: { sourceMap: isDev } },
-                        { loader: 'sass-loader', options: { sourceMap: isDev } }
+                        // { loader: 'resolve-url-loader' },
+                        { loader: 'sass-loader', options: { sourceMap: isDev,
+                                sourceMapContents: false } }
                     ]
+                },
+                {
+                    test: /\.(png|jpg|jpeg|gif)$/,
+                    use: {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'images'
+                        },
+                    },
                 }
             ]
         },
@@ -46,7 +69,10 @@ module.exports = function (env) {
             }),
             new MiniCssExtractPlugin({
                 filename: 'style.css'
-            })
+            }),
+            new CopyWebpackPlugin([
+                { from: 'src/assets', to: 'images' }
+            ])
         ]
     };
 
