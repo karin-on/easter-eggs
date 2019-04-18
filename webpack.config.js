@@ -42,16 +42,16 @@ module.exports = function (env) {
                         !isDev ?
                             MiniCssExtractPlugin.loader :
                             { loader: 'style-loader', options: { sourceMap: true } },
-                        // { loader: 'css-loader', options: { sourceMap: isDev } },
-                        { loader: 'css-loader', options: { sourceMap: isDev, url: !isDev } },
+                        { loader: 'css-loader', options: { sourceMap: isDev } },
+                        //{ loader: 'css-loader', options: { sourceMap: isDev, url: isDev } },    //url: dev - true
                         { loader: 'postcss-loader', options: { sourceMap: isDev } },
-                        // { loader: 'resolve-url-loader' },
+                        { loader: 'resolve-url-loader' },                              //development only
                         { loader: 'sass-loader', options: { sourceMap: isDev,
                                 sourceMapContents: false } }
                     ]
                 },
                 {
-                    test: /\.(png|jpg|jpeg|gif)$/,
+                    test: /\.(png|jpg|jpeg|gif|svg)$/,
                     use: {
                         loader: 'file-loader',
                         options: {
