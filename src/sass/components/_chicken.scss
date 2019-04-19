@@ -1,0 +1,326 @@
+.chicken {
+  width: 740px;
+  height: 900px;
+  background-color: $color-chick-yellow-main;
+  border-radius: 50%/52% 52% 45% 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.chicken__belly {
+  width: 417px;
+  height: 465px;
+  background-color: $color-chick-yellow-light;
+  border-radius: 50%/60% 60% 36% 36%;
+  margin-top: 60px;
+}
+
+.chicken__face {
+  width: 217px;
+  height: 165px;
+  //border: 1px solid black;
+}
+
+.chicken__eyes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.chicken__eye {
+  width: 53px;
+  height: 53px;
+  background-color: $color-chick-eye-dark;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.eye__inner {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: $color-chick-eye-light;
+}
+
+.chicken__mouth-wrapper {
+  width: 210px;
+  margin: 0 auto;
+  border-radius: 50%/25% 25% 0 0;
+  overflow: hidden;
+}
+
+.chicken__mouth {
+  width: 140px;
+  height: 140px;
+  background-color: $color-chick-orange;
+  margin: 0 auto;
+  transform: rotate(-45deg) skew(10deg, 10deg);
+  border-radius: 22% 15%;
+  position: relative;
+  top: -37px;
+}
+
+.chicken__wing {
+  position: absolute;
+  //border: 1px solid black;
+  width: 290px;
+  height: 290px;
+  //clip-path: ellipse(50% 50% at 50% 50%);
+  top: 42%;
+  background-color: $color-chick-yellow-main;
+  border-radius: 100% 17%;
+  z-index: 1;
+
+  &--1 {
+    left: 7%;
+    transform: translate(-50%, -50%) rotate(-5deg);
+  }
+
+  &--2 {
+    right: 7%;
+    transform: translate(50%, -50%) rotate(95deg);
+  }
+
+  &-shadow {
+    //position: relative;
+    background-color: #ed9608;
+    position: absolute;
+    //border: 1px solid black;
+    width: 290px;
+    height: 290px;
+    //clip-path: ellipse(50% 50% at 50% 50%);
+    top: 42%;
+    border-radius: 100% 17%;
+
+    &--1 {
+      left: 7%;
+      transform: translate(-50%, -50%) rotate(-5deg);
+    }
+
+    &--2 {
+      right: 7%;
+      transform: translate(50%, -50%) rotate(103deg);
+    }
+  }
+
+}
+
+
+//chicken__wing-shadow chicken__wing-shadow--2
+.aaa {
+  position: absolute;
+  width: 275px;
+  height: 100px;
+  top: 434px;
+  border-bottom: 54px solid #ed9608;
+
+}
+
+.aaa {
+  &--xxx {
+    left: -114px;
+    transform: rotate(-19deg);
+    border-bottom-right-radius: 80%;
+    clip-path: polygon(45% 0%, 100% 0, 100% 100%, 36% 100%);
+  }
+
+  &--yyy {
+    right: -114px;
+    transform: rotate(19deg);
+    border-bottom-left-radius: 80%;
+    clip-path: polygon(0 0, 56% 0, 64% 100%, 0 100%);
+  }
+}
+
+.aaa--yyy {
+}
+
+
+
+.chicken__hair {
+  width: 80px;
+  height: 80px;
+  background-color: $color-chick-yellow-main;
+  margin: 0 auto;
+  //transform: rotate(-45deg) skew(10deg, 10deg);
+  position: absolute;
+  top: -43px;
+
+  &--1 {
+    border-radius: 0 100%;
+    right: 50%;
+    transform: rotate(-22deg);
+  }
+
+  &--2 {
+    border-radius: 100% 0;
+    left: 50%;
+    transform: rotate(22deg);
+  }
+}
+
+.chicken__foot {
+  position: absolute;
+  bottom: 0;
+
+  &--right {
+    right: 25%;
+    transform: rotate(17deg);
+  }
+
+  &--left {
+    left: 25%;
+    transform: rotate(-17deg);
+  }
+}
+
+.foot__toe {
+  position: relative;
+  width: 28px;
+  background-color: $color-chick-orange;
+}
+
+.toe__long {
+  height: 145px;
+}
+
+.toe__short {
+  position: absolute;
+  //width: 30px;
+  height: 95px;
+  background-color: $color-chick-orange;
+  transform-origin: bottom;
+
+  &--left {
+    transform: rotate(-42deg);
+    left: -4px;
+
+    .foot__toe-end {
+      left: -2px;
+      transform: rotate(180deg);
+    }
+  }
+
+  &--right {
+  transform: rotate(42deg);
+    right: -4px;
+
+    .foot__toe-end {
+      left: unset;
+      right: -2px;
+      transform: rotate(180deg);
+    }
+  }
+
+}
+
+.short-toe__end-semicircle {
+  position: absolute;
+  width: 26px;
+  height: 11px;
+  margin: 0 auto;
+  z-index: 1;
+  border-top: 4px solid $color-chick-orange;
+
+  &--left {
+    border-top-left-radius: 60%;
+    left: -15.5px;
+    top: 27px;
+    transform: rotate(83deg);
+  }
+
+  &--right {
+    border-top-right-radius: 60%;
+    right: -15.5px;
+    top: 27px;
+    transform: rotate(-84deg);
+  }
+}
+
+.foot__toe-end {
+  position: absolute;
+  width: 41px;
+  height: 60px;
+  background-color: $color-chick-orange;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  border-radius: 50%/60% 60% 38% 38%;
+}
+
+.foot__heel {
+  position: absolute;
+  width: 44px;
+  height: 60px;
+  background-color: $color-chick-orange;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%/60% 60% 38% 38%;
+}
+
+.long-toe__end-semicircle {
+  position: absolute;
+  width: 26px;
+  height: 11px;
+  margin: 0 auto;
+  z-index: 1;
+  border-top: 4px solid $color-chick-orange;
+
+  &--left {
+    border-top-left-radius: 54%;
+    left: -15px;
+    top: 21px;
+    transform: rotate(86deg);
+  }
+
+  &--right {
+    border-top-right-radius: 59%;
+    right: -15px;
+    top: 19px;
+    transform: rotate(-85deg);
+  }
+}
+
+.long-toe__heel-semicircle {
+  position: absolute;
+  width: 48px;
+  height: 29px;
+  margin: 0 auto;
+  z-index: 1;
+  border-top: 4px solid $color-chick-orange;
+
+  &--left {
+    border-top-left-radius: 90%;
+    left: -33px;
+    bottom: 21px;
+    transform: rotate(104deg);
+  }
+
+  &--right {
+    border-top-right-radius: 90%;
+    right: -33px;
+    bottom: 21px;
+    transform: rotate(-104deg);
+  }
+}
+
+
+
+
+
+///////////////////////////////
+.polokrag {
+  width: 80px;
+  height: 40px;
+  margin: 0 auto;
+  border-top: 8px solid red;
+  /* border-right: 1px solid red; */
+  border-top-right-radius: 100%;
+  border-top-left-radius: 100%;
+}
