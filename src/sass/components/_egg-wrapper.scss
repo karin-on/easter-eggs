@@ -1,3 +1,7 @@
+.eggs {
+  display: flex;
+}
+
 .egg-wrapper {
   position: relative;
 
@@ -12,15 +16,13 @@
   }
 
   &--1 {
-    margin-right: -60px;
-
     &:after {
       animation: shadowMoveLeft $animation-settings;
     }
   }
 
   &--2 {
-    margin-left: -60px;
+    right: 120px;
 
     &:after {
       animation: shadowMoveRight $animation-settings;
