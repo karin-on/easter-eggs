@@ -14,9 +14,9 @@
   &--2 {
     background-color: $color-pink-dark;
     //development
-    //background-image: url('../../assets/images/egg-pattern.svg'), linear-gradient(145deg, $color-white 0%, rgba($color-white, 0.95) 3%, rgba($color-white, 0.9) 6%, rgba($color-white, 0) 55%);
+    background-image: url('../../assets/images/egg-pattern.svg'), linear-gradient(145deg, $color-white 0%, rgba($color-white, 0.95) 3%, rgba($color-white, 0.9) 6%, rgba($color-white, 0) 55%);
     //production
-    background-image: url('../assets/images/egg-pattern.svg'), linear-gradient(145deg, $color-white 0%, rgba($color-white, 0.95) 3%, rgba($color-white, 0.9) 6%, rgba($color-white, 0) 55%);
+    //background-image: url('../assets/images/egg-pattern.svg'), linear-gradient(145deg, $color-white 0%, rgba($color-white, 0.95) 3%, rgba($color-white, 0.9) 6%, rgba($color-white, 0) 55%);
 
     background-blend-mode: soft-light;
     background-repeat: no-repeat;

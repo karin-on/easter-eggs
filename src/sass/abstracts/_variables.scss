@@ -19,4 +19,7 @@ $color-chick-orange: #f9650f;
 
 //ANIMATIONS - eggs
 $animation-settings: 5s ease-in-out infinite alternate;
-$egg-shadow: 0 60px 35px rgba($color-black, 0.2);
+
+//SHADOWS:
+$shadow-egg: 0 60px 35px rgba($color-black, 0.2);
+$shadow-chicken: 0 120px 35px rgba(0, 0, 0, 0.2);

@@ -45,7 +45,7 @@ module.exports = function (env) {
                         { loader: 'css-loader', options: { sourceMap: isDev } },
                         //{ loader: 'css-loader', options: { sourceMap: isDev, url: isDev } },    //url: dev - true
                         { loader: 'postcss-loader', options: { sourceMap: isDev } },
-                        //{ loader: 'resolve-url-loader' },                              //development only
+                        { loader: 'resolve-url-loader' },                              //development only
                         { loader: 'sass-loader', options: { sourceMap: isDev,
                                 sourceMapContents: false } }
                     ]

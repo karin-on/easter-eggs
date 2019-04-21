@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
-  padding-bottom: 5%;
+  padding-bottom: 7%;
 }
 
 
@@ -11,5 +11,11 @@
   .container {
     transform: scale(.7);
     padding-bottom: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    transform: scale(.5);
   }
 }

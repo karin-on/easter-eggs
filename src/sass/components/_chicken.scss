@@ -1,3 +1,20 @@
+.chicken-container {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80%;
+    border-radius: 50%;
+    z-index: -1;
+    bottom: 95px;
+    box-shadow: $shadow-chicken;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .chicken {
   width: 740px;
   height: 900px;
