@@ -18,4 +18,4 @@ My first CSS drawings with a bit of animation. Inspired by [Flynerd's blog post 
 
 ## Preview
 
-![](./src/assets/images/easter-prev.png)
+![](./src/assets/images/easter-eggs-prev.png)
