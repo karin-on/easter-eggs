@@ -17,7 +17,7 @@
 
   &--1 {
     &:after {
-      animation: shadowMoveLeft $animation-settings;
+      animation: shadowMoveLeft $eggs-animation-settings;
     }
   }
 
@@ -25,7 +25,7 @@
     right: 120px;
 
     &:after {
-      animation: shadowMoveRight $animation-settings;
+      animation: shadowMoveRight $eggs-animation-settings;
     }
   }
 }

@@ -3,6 +3,7 @@
 
 @import
   "abstracts/variables",
+  "abstracts/mixins",
   "abstracts/animations";
 
 @import
@@ -10,5 +11,5 @@
 
 @import
   "components/chicken",
-"components/eggs-container",
+  "components/eggs-container",
   "components/egg";

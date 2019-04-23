@@ -1,3 +1,102 @@
+//CHICKEN
+@keyframes moveRightWing {
+  0% {
+    transform: rotate(5deg);
+  }
+  3% {
+    transform: rotate(-5deg);
+  }
+  6% {
+    transform: rotate(5deg);
+  }
+  9% {
+    transform: rotate(-5deg);
+  }
+  12% {
+    transform: rotate(5deg);
+  }
+  15% {
+    transform: rotate(-5deg);
+  }
+  18%, 100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes moveRightWingShadow {
+  0% {
+    @include rightWingShadowDown;
+  }
+  3% {
+    @include rightWingShadowUp;
+  }
+  6% {
+    @include rightWingShadowDown;
+  }
+  9% {
+    @include rightWingShadowUp;
+  }
+  12% {
+    @include rightWingShadowDown;
+  }
+  15% {
+    @include rightWingShadowUp;
+  }
+  18%, 100% {
+    @include rightWingShadowDown;
+  }
+}
+
+@keyframes moveLeftWing {
+  0% {
+    transform: rotate(-5deg);
+  }
+  3% {
+    transform: rotate(5deg);
+  }
+  6% {
+    transform: rotate(-5deg);
+  }
+  9% {
+    transform: rotate(5deg);
+  }
+  12% {
+    transform: rotate(-5deg);
+  }
+  15% {
+    transform: rotate(5deg);
+  }
+  18%, 100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes moveLeftWingShadow {
+  0% {
+    @include leftWingShadowDown;
+  }
+  3% {
+    @include leftWingShadowUp;
+  }
+  6% {
+    @include leftWingShadowDown;
+  }
+  9% {
+    @include leftWingShadowUp;
+  }
+  12% {
+    @include leftWingShadowDown;
+  }
+  15% {
+    @include leftWingShadowUp;
+  }
+  18%, 100% {
+    @include leftWingShadowDown;
+  }
+}
+
+
+//EGGS
 @keyframes shadowMoveLeft {
   0% {
     left: 8%;

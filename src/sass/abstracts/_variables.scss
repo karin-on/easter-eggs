@@ -17,8 +17,9 @@ $color-chick-eye-dark: #000203;
 $color-chick-eye-light: #3e5053;
 $color-chick-orange: #f9650f;
 
-//ANIMATIONS - eggs
-$animation-settings: 5s ease-in-out infinite alternate;
+//ANIMATIONS:
+$eggs-animation-settings: 5s ease-in-out infinite alternate;
+$chick-animation-settings: 5s linear 3s infinite alternate;
 
 //SHADOWS:
 $shadow-egg: 0 60px 35px rgba($color-black, 0.2);

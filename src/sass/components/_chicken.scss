@@ -85,19 +85,24 @@
   position: absolute;
   width: 290px;
   height: 290px;
-  top: 42%;
+  top: 223px;
   background-color: $color-chick-yellow-main;
-  border-radius: 100% 17%;
   z-index: 1;
 
   &--1 {
-    left: 7%;
-    transform: translate(-50%, -50%) rotate(-5deg);
+    border-radius: 100% 17%;
+    transform-origin: top right;
+    transform: rotate(-5deg);
+    left: -110px;
+    animation: moveLeftWing $chick-animation-settings;
   }
 
   &--2 {
-    right: 7%;
-    transform: translate(50%, -50%) rotate(95deg);
+    border-radius: 17% 100%;
+    transform-origin: top left;
+    transform: rotate(5deg);
+    right: -110px;
+    animation: moveRightWing $chick-animation-settings;
   }
 }
 
@@ -113,6 +118,8 @@
     transform: rotate(-19deg);
     border-bottom-right-radius: 80%;
     clip-path: polygon(45% 0%, 100% 0, 100% 100%, 36% 100%);
+    animation: moveLeftWingShadow $chick-animation-settings;
+
   }
 
   &--2 {
@@ -120,6 +127,7 @@
     transform: rotate(19deg);
     border-bottom-left-radius: 80%;
     clip-path: polygon(0 0, 56% 0, 64% 100%, 0 100%);
+    animation: moveRightWingShadow $chick-animation-settings;
   }
 }
 
